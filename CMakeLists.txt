@@ -8,3 +8,5 @@ target_include_directories(boost_conversion BEFORE INTERFACE ${CMAKE_CURRENT_SOU
 
 install(TARGETS boost_conversion DESTINATION lib)
 install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/include/boost DESTINATION include)
+
+add_library(boost::conversion ALIAS boost_conversion)
